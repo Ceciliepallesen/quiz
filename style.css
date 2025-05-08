@@ -1,0 +1,93 @@
+@charset "UTF-8";
+body {
+  background: linear-gradient(to bottom, #789ed8, #aabde0);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+#quiz-container {
+  background: #fff;
+  width: 80%;
+  max-width: 600px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+#header {
+  color: #333;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  overflow-wrap: break-word;
+}
+
+#content {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.button, .button-centered {
+  background: #789ed8;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s ease;
+}
+
+.button:hover, .button-centered:hover {
+  background: #5678c0;
+}
+
+.button-centered {
+  display: block;
+  margin: 10px auto;
+  width: 50%;
+  text-align: center;
+}
+
+.lock-icon {
+  color: #333;
+  font-size: 24px;
+  margin-right: 10px;
+  vertical-align: top;
+  animation: swing 2s infinite ease-in-out;
+}
+
+/* Animation til lås */
+@keyframes swing {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(15deg);
+  }
+}
+/* Mobil */
+@media (max-width: 768px) {
+  .buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .button, .button-centered {
+    width: 80%;
+  }
+}/*# sourceMappingURL=style.css.map */
